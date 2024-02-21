@@ -4,11 +4,12 @@ This repo documents an implementation of P-String and realated functions in Asse
 ## Background
 P-String is a way to save string as an array of chars where the first byte represents the length of the string:
 
+```ruby
 typedef struct {
     char size;
     char string[255];
 } Pstring;
-
+```
 In this repo I've implemented a P-String smilar to those in string.h library, but using assembly language.
 
 ### P-String in the Stack
